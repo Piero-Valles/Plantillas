@@ -1,0 +1,15 @@
+\babel@toc {spanish}{}
+\contentsline {section}{INTRODUCCIÓN}{10}{section*.3}%
+\contentsline {section}{CAPÍTULO I: TÍTULO DEL CAPÍTULO}{11}{section*.4}%
+\contentsline {subsection}{1.1. Subsección}{11}{section*.5}%
+\contentsline {subsubsection}{1.1.1. Subsección}{11}{section*.6}%
+\contentsline {section}{CAPÍTULO II: TÍTULO DEL CAPÍTULO}{12}{section*.7}%
+\contentsline {subsection}{2.1. Sección}{12}{section*.8}%
+\contentsline {section}{CAPÍTULO III: TÍTULO DEL CAPÍTULO}{13}{figure.1}%
+\contentsline {subsection}{3.1. Subsección}{13}{section*.10}%
+\contentsline {section}{CAPÍTULO IV: TÍTULO DEL CAPÍTULO}{14}{table.1}%
+\contentsline {subsection}{4.1. Subsección}{14}{section*.12}%
+\contentsline {section}{Conclusiones}{15}{equation.0.1}%
+\contentsline {section}{Recomendaciones}{16}{section*.14}%
+\contentsline {section}{Referencias bibliográficas}{17}{section*.15}%
+\contentsline {section}{Anexos}{19}{section*.17}%

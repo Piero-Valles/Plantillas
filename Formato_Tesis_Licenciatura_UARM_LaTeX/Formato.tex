@@ -1,0 +1,120 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc} %Codificación tipográficas
+\usepackage[spanish]{babel} %Idioma
+\usepackage{amsmath} %Insertar ecuaciones
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx} %Insertar figuras
+\usepackage[svgnames]{xcolor}
+\usepackage{pstricks}
+\usepackage{marginnote}
+\usepackage{float}
+\usepackage{multicol} %Muliples columnas
+\usepackage{xspace}
+\usepackage{makeidx}
+\usepackage[natbibapa]{apacite} %Referencias estilo APA
+\usepackage{wrapfig} %Figura a lado del texto
+\usepackage{makecell} % Para tablas
+\usepackage{multirow} % Para tablas
+\usepackage{booktabs} % Para linea de tablas
+
+%AJUSTES DE PÁGINA
+\usepackage[papersize={21cm, 29.7cm}, centering, left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry} 
+
+%ENCABEZADOS Y PIE DE PÁGINA
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % contenido de encabezado. por omisión: sección
+\lhead{} % superior izquierda
+\chead{} % superior centro
+\rhead{} % superior derecha
+\lfoot{} % inferior izquierda
+\cfoot{} % inferior centro
+\rfoot{\thepage} % inferior derecha
+\renewcommand{\footrulewidth}{0pt}% línea arribe del encabezado
+\renewcommand{\headrulewidth}{0pt}% línea debajo del encabezado
+
+%TIPOS DE LETRA
+%\renewcommand*{\familydefault}{\sfdefault} %Arial
+\usepackage[T1]{fontenc}
+\usepackage{times} %Times New Roman
+
+%HIPERVÍNCULOS
+\usepackage[hidelinks=true
+colorlinks=black,
+linkcolor=black,
+urlcolor=black,
+citecolor=blue,
+anchorcolor=blue]{hyperref}
+%\usepackage[table, xcdraw]{xcolor}
+\usepackage[normalem]{ulem}
+\hypersetup{colorlinks, urlcolor=blue}
+\makeatletter
+\DeclareUrlCommand\ULurl@@{%
+	\def\UrlFont{\rmfamily\color{blue}}%
+	\def\UrlLeft{\uline\bgroup}%
+	\def\UrlRight{\egroup}}
+\def\ULurl@#1{\hyper@linkurl{\ULurl@@{#1}}{#1}}
+\DeclareRobustCommand*\ULurl{\hyper@normalise\ULurl@}
+\makeatother
+
+%AJUSTES ADICIONALES
+\renewcommand{\baselinestretch}{1.5}%Interlineado
+\setlength{\parskip}{0pt}%Espacio entre párrafos
+%\setlength{\parindent}{1em} %Sangría  primera linea de párrafos
+%\setcounter{tocdepth}{2} %Tabla de contenidos (2 = título y subtítulo)
+
+
+
+
+	
+
+
+
+\begin{document}
+
+\newpage
+\break
+
+\include{caratula}
+\include{epigrafe}
+\include{dedicatoria}
+\include{agradecimiento}
+\include{resumen}
+
+\include{tabla_de_contenidos}
+
+\include{introduccion}
+\include{capitulo_1}
+\include{capitulo_2}	
+\include{capitulo_3}
+\include{capitulo_4}
+\include{conclusiones}	
+\include{recomendaciones}
+
+
+\medspace
+\vspace{2cm}
+\begin{center}
+	\addcontentsline{toc}{section}{Referencias bibliográficas}
+	\section*{\large REFERENCIAS BIBLIOGRÁFICAS}
+\end{center}
+\vspace{-1cm}
+\renewcommand{\refname}{} %modifica título por defecto
+\bibliographystyle{apacite}
+\bibliography{referencias}	
+
+\break
+
+\medspace
+\vspace{9.5cm}
+\begin{center}
+	\LARGE \bf ANEXOS
+\end{center}
+
+\include{anexos}
+
+\end{document}
+
+
+
